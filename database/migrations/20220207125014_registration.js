@@ -6,7 +6,7 @@ exports.up = function(knex) {
         table.string('name')
         table.string('email')
         table.string('password')
-        table.timestamps(true,true);
+        // table.timestamps(true,true);
     }) 
   
 };

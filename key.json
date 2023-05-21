@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "loanmangment-718b7",
+    "private_key_id": "da857aafc16d23cb18936ee2757f1e0a28d4e90d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQJvBB9Sf2E9yj\n3nCCvTB2nvNw0+/3dGdf4jGnST2aM3/J1qSbYG+GXnW2jkz+gRMGAZkGZ+zoEo+Y\nXgkrOZkD8dHbqnPY8gNCWFxC6vtVS5r7DPIrB6Fqaz0YOczgONPwgyG+OV8GNxbA\nnhIlLZj+KQ49w6LQw5WJT3woa8Kr2cEl+IMcVO9Y3A6+Wl1ZNO1h7HGFmdqWndSo\n+wxhBbF4txo6wdJ6p3hn7jHynu4NT/iCKLoxxMO4/7nyAhPJU5ACQ7ZQTrQ4TWFq\nZX+w5k+IzoeTrJp+bY5F5WIV5cuiHY5ZOBPb8W6iOmiscMNfpCdOKbr8FIuvIEGr\nRsnFqbXfAgMBAAECggEANfPR1JbR29O8HfF7IjgdhrGekgEtMuvGG7FKg3zVbdGp\nbsym7+soHSEAy+fIhzM3lhf17RYk7uZYt/qvz7dnNQGKDrD4xCO+uoSirWmw6aPm\nMOpjHsokiavwMwZQV1IDhVTH+0FtovPGfvi55U8TV9WWbmX2HryDVwr2OJft5pLb\n72GbchkZCNn+7dwjJoXLuPo9rPRLEk8wA1qAjonFHGxffCGOD4rdUVLV6lv5P0Xx\nxKo5MlJezukt9QmknGDIrxM7IKNa5Bpe2G/HLq9ayn3HHo9RKatAwwk8V0uZFYkf\nls/IYr/9P8lQMMp9ovbf0Wdd7wfcl9WJgNUykTe2MQKBgQDrjfitzEWacfdujQHO\nUFDpnHUScic9GJrDcgMviy9myW/IA5pFYN8pKgxYrv7QQXu89Du9whsg+TTO6pTu\nFL+6Mdx6vqnrlqZd9Xi1DdsqkO3Wtsbj3W7pgXlbPl3VlFpP+Lkfed6TtZjUUuXL\n34H/TEMMjywGh1kL/7IiwM8Z2QKBgQDiOBVfE0IGu5hyzZRISNmczJCib/7E4IXf\nfU8PnywIQG3MERI1a4KUxgKnOkiUI9Jok05T2d6yTCxR2cjHwarsC4KsOMQ+HOyE\nyxpXApyQ62QQoT4HodjyOXkxSX52C1FyEbe04jnq4yDdLuYHzL5NrdnZ9SmRxhrz\nUzKVaRkCdwKBgDKAnteMW0PwuU7/dmqod6COhd8tkFIeC1hqAlrYKZKND6U/eHz1\ndwMZW8pLwqAd2gy6BHD7w9s+8t6GFuYwlqax+AZtCHtVMlgkv/t5fArVRdjqGRxT\npmrz8nPonC+lffN1bSNdeqYKojiriU87nWCCFkIEFDlWHXZgHO4sjnqJAoGAJicJ\nS7CmyRXofyw23v4SXYSOvCahVDj9uxSaOetBdN7Q5cLXTFUmf8rpdaS5yupDuUlm\nw3OSQIXiT6eoWjBKkGbckgk857DfHwJWHeid2T8p8DgRix37xdZ1nx9jCauc/90H\nG6Wv2PKXf1ZCi3w3eEhi3oSfjytXLkSQ2mwQQL8CgYEAua7lO58bCRHeej+zYNiz\nSQG7AcGLoBKqpSvXnmWdhlZjBE383tQGxGa71YlazsUfvLomx3+VMVv8erUc7jf7\nuQoj+wLwu9xExnycmRnBd6dY9+0xv4HOaGpY+dfxlkM0cjMpe+fmwhv2+eeZ+GQP\nph6BIBubbnmarOsIpZaPYgE=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-z4rbj@loanmangment-718b7.iam.gserviceaccount.com",
+    "client_id": "101432324592424844496",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-z4rbj%40loanmangment-718b7.iam.gserviceaccount.com"
+  }
+  

@@ -6,7 +6,7 @@ exports.up = function(knex) {
         table.foreign('loan_id').references('loan_details.id');
         table.string('SIP')
         table.string('Pay_date')
-        table.timestamps(true,true);
+        // table.timestamps(true,true);
         
     }) 
 };

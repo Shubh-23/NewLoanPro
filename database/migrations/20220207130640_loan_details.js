@@ -12,7 +12,7 @@ exports.up = function(knex) {
         table.string('loan_emi')
         table.string('ROI')
         table.string('sention_date')
-        table.timestamps(true,true);
+        // table.timestamps(true,true);
     }) 
 };
 

@@ -20,6 +20,8 @@
     "ejs": "^3.1.6",
     "exceljs": "^4.3.0",
     "express": "^4.17.1",
+    "firebase": "^8.6.8",
+    "firebase-admin": "^11.7.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.14",
     "moment": "^2.29.1",

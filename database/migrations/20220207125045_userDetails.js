@@ -10,7 +10,7 @@ exports.up = function(knex) {
         table.string('pan')
         table.string('adharcard')
         table.string('address')
-        table.timestamps(true,true);
+        // table.timestamps(true,true);
     }) 
 };
 

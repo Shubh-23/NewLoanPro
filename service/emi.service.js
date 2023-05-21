@@ -19,40 +19,40 @@ class EmiDetails{
             'ROI': params.ROI,
         }
 
-const res = db.collection("Users").doc(id).set(data);
-res.send(res)
+// const res = db.collection("Users").doc(id).set(data);
+// res.send(res)
 
-        // var loanDetail = new loanDetails(data);
-        // return loanDetail.save(null).tap(function(model){
-        //     const loanId = JSON.stringify(model.id)
+        var loanDetail = new loanDetails(data);
+        return loanDetail.save(null).tap(function(model){
+            const loanId = JSON.stringify(model.id)
             
-        //     var date;
-        //     for(let i = 1; i<=month; i++){
-        //         var d = new Date()
-        //         d.setMonth(d.getMonth() + i)
-        //     if(d.getMonth() === 0){
-        //          date = `${5}/${d.getMonth() + 12}/${d.getFullYear() -1}  ` 
+            var date;
+            for(let i = 1; i<=month; i++){
+                var d = new Date()
+                d.setMonth(d.getMonth() + i)
+            if(d.getMonth() === 0){
+                 date = `${5}/${d.getMonth() + 12}/${d.getFullYear() -1}  ` 
                 
-        //     }else{
-        //          date = `${5}/${d.getMonth()}/${d.getFullYear()}  `
-        //         }
-        //         const data = {
-        //             'loan_id':loanId,
-        //             'SIP':(params.loanEmi),
-        //             'Pay_date':date,
-        //         }
-        //             var EmiDetails = new emiDetails(data);
-        //             EmiDetails.save(null).tap(function(model){
-        //             }).catch(function(err){
-        //                 console.log("err--",err);
-        //                 err;
-        //             })
-        //         }
-        //         return model;
-        //      }).catch(function(err){
-        //         console.log("err--",err);
-        //         return err;
-        // })
+            }else{
+                 date = `${5}/${d.getMonth()}/${d.getFullYear()}  `
+                }
+                const data = {
+                    'loan_id':loanId,
+                    'SIP':(params.loanEmi),
+                    'Pay_date':date,
+                }
+                    var EmiDetails = new emiDetails(data);
+                    EmiDetails.save(null).tap(function(model){
+                    }).catch(function(err){
+                        console.log("err--",err);
+                        err;
+                    })
+                }
+                return model;
+             }).catch(function(err){
+                console.log("err--",err);
+                return err;
+        })
     }
                 
     getLoanDetails(params){
@@ -67,37 +67,37 @@ res.send(res)
     }
 
     
-    // EmiDetails(params,year){
-    //     var date;
-    //     for(let i = 1; i<=year; i++){
-    //         var d = new Date()
-    //         d.setMonth(d.getMonth() + i)
-    //         if(d.getMonth() === 0){
-    //              date = `${5}/${d.getMonth() + 12}/${d.getFullYear() -1}  ` 
+    EmiDetails(params,year){
+        var date;
+        for(let i = 1; i<=year; i++){
+            var d = new Date()
+            d.setMonth(d.getMonth() + i)
+            if(d.getMonth() === 0){
+                 date = `${5}/${d.getMonth() + 12}/${d.getFullYear() -1}  ` 
                 
-    //         }else{
-    //              date = `${5}/${d.getMonth()}/${d.getFullYear()}  `
+            }else{
+                 date = `${5}/${d.getMonth()}/${d.getFullYear()}  `
                 
-    //         }
-    //         const data = {
-    //             'user_id':params.userId,
-    //             'sention_amount':params.amount,
-    //             'SIP':(params.EMIAmount),
-    //             'Total_amount':params.TotalAmount,
-    //             'loan_categorie':params.loanCategire,
-    //             'ROI':params.rate,
-    //             'Pay_date':date,
+            }
+            const data = {
+                'user_id':params.userId,
+                'sention_amount':params.amount,
+                'SIP':(params.EMIAmount),
+                'Total_amount':params.TotalAmount,
+                'loan_categorie':params.loanCategire,
+                'ROI':params.rate,
+                'Pay_date':date,
         
-    //         }//console.log("hjkhjk",data)
-    //             var EmiDetails = new emiDetails(data);
-    //             EmiDetails.save(null).tap(function(model){
+            }//console.log("hjkhjk",data)
+                var EmiDetails = new emiDetails(data);
+                EmiDetails.save(null).tap(function(model){
                     
-    //             }).catch(function(err){
-    //                 console.log("err--",err);
-    //                     err;
-    //             })
-    //     }
-    // }
+                }).catch(function(err){
+                    console.log("err--",err);
+                        err;
+                })
+        }
+    }
 
 
     TypeOfLoan(params){

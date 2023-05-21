@@ -40,6 +40,16 @@ class userData{
         })
 
     }
+    getAllUserDetails(req,res){
+        return user.getAllUserDetails().then((data)=>{
+            if((data) != null){
+                return res.json({"ErrorCode":200,"message":"Your successfully working","Data":data})
+            }else{
+                return res.json({"ErrorCode":500,"message":"something went's wroung","Data":{}})
+            }
+        })
+
+    }
 
     
 }

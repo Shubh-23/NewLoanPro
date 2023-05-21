@@ -11,6 +11,8 @@ router.post('/user/login',userData.login)                           //Done
 
 //submit All details of user
 router.post('/user/SubmitAllDetails',userData.SubmitAllDetails)     //Done
+//get user details
+router.get('/user/getAllUserDetails',userData.getAllUserDetails)     //Done
 
 
 router.post('/user/getLoanDetails',emiDetails.getLoanDetails)        //Done

@@ -50,6 +50,16 @@ class usersData{
             return err;
         })
     }
+
+    getAllUserDetails(){
+        return userData.forge().query(function(qb){
+        }).fetchAll().then(function(data){
+            return data
+        }).catch(function(err){
+            console.log("err--",err);
+            return err;
+        })
+    }
     
     
 }

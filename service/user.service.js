@@ -3,6 +3,7 @@ const userDetails = require('../model/user_details.model')
 
 class usersData{
     registration(params){
+        console.log(params);
         const data = {
             'name':params.name,
             'email':params.email,

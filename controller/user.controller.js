@@ -51,6 +51,29 @@ class userData{
 
     }
 
+    createSongList(req,res){
+        let data = req.body
+        return user.createSongList(data).then((data)=>{
+            if((data) != null){
+                return res.json({"ErrorCode":200,"message":"Your successfully working","Data":data})
+            }else{
+                return res.json({"ErrorCode":500,"message":"something went's wroung","Data":{}})
+            }
+        })
+
+    }
+
+    getAllSongList(req,res){
+        return user.getAllSongList().then((data)=>{
+            if((data) != null){
+                return res.json({"ErrorCode":200,"message":"Your successfully working","Data":data})
+            }else{
+                return res.json({"ErrorCode":500,"message":"something went's wroung","Data":{}})
+            }
+        })
+
+    }
+
     
 }
 

@@ -31,6 +31,11 @@ router.get('/user/GetAllDetailsEmi/:id',emiDetails.GetAllDetailsEmi)
 router.get('/user/InterestList',emiDetails.InterestList)            //Done
 
 router.get('/user/InterestListId/:id',emiDetails.InterestListId)
+
+
+router.post('/song/createSongList',userData.createSongList)
+
+router.get('/song/getAllSongList',userData.getAllSongList)
  
 
 

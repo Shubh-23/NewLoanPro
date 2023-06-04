@@ -1,5 +1,6 @@
 const userData = require('../model/user.model')
 const userDetails = require('../model/user_details.model')
+const songList = require('../model/song_list')
 
 class usersData{
     registration(params){
@@ -54,6 +55,35 @@ class usersData{
     getAllUserDetails(){
         return userData.forge().query(function(qb){
         }).fetchAll().then(function(data){
+            return data
+        }).catch(function(err){
+            console.log("err--",err);
+            return err;
+        })
+    }
+
+
+    createSongList(params,userId){
+        const data = {
+            'songName':params.songName,
+            'artiest':params.artiest,
+            'songUrl':params.songUrl,
+        }
+        console.log(data);
+        var userDetail = new songList(data);
+        return userDetail.save(null).tap(function(model){
+            return model;
+        }).catch(function(err){
+            console.log("err--",err);
+            return err;
+        })
+    }
+
+
+    getAllSongList(){
+        return songList.forge().query(function(qb){
+        }).fetchAll().then(function(data){
+            // console.log(data);
             return data
         }).catch(function(err){
             console.log("err--",err);

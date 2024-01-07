@@ -4,6 +4,12 @@ const userData = require('../controller/user.controller')
 const emiDetails = require('../controller/Emi.controller')
 
 //registration
+router.post('/user/AddUserDetails',userData.AddUserDetails)             //Done
+
+//login
+router.get('/getAllCategories',userData.AllCategories)  
+
+
 router.post('/user/registration',userData.registration)             //Done
 
 //login

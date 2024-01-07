@@ -3,6 +3,73 @@ const userDetails = require('../model/user_details.model')
 const songList = require('../model/song_list')
 
 class usersData{
+
+
+
+    async hashPassword(password) {
+        return new Promise((resolve, reject) => {
+        bcrypt.hash(password, saltRounds, (err, hash) => {
+            if (err) {
+            reject(err);
+            } else {
+            resolve(hash);
+            }
+        });
+        });
+    }
+
+    async AddUserDetails(params) {
+        try {
+          // Hash the password using async/await
+          const hashedPassword = await this.hashPassword(params.password);
+      
+          // Update the params object with the hashed password
+          params.password = hashedPassword;
+      
+          console.log("params", params);
+      
+          const data = {
+            "id": params.id,
+            "name": params.name,
+            "email": params.email,
+            "phone": params.phone,
+            "role_id": params.role_id,
+            "password": params.password,
+            "remember_token": params.remember_token
+          };
+          const UserData = new UserTable(data);
+      
+          // Save the user data to the database using async/await
+          const savedUserData = await userData.save();
+      
+          console.log('User object with hashed password:', savedUserData);
+      
+          return savedUserData;
+        } catch (error) {
+          console.error('Error:', error);
+          throw error; // Rethrow the error or handle it accordingly
+        }
+      }
+    
+
+      AllCategories(params) {
+        return categoriesDetails.forge().query((qb) => {
+            // qb.where({ "id": params.userId })
+        }).fetchAll().then((data) => {
+            console.log(data);
+            return data
+
+        }).catch((err) => {
+            return err
+        })
+    }
+
+
+
+
+
+
+
     registration(params){
         console.log(params);
         const data = {

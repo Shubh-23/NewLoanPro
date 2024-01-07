@@ -1,5 +1,5 @@
 const userData = require('../model/user.model')
-const userDetails = require('../model/user_details.model')
+const categoriesDetails = require('../model/user_details.model')
 const songList = require('../model/song_list')
 
 class usersData{
@@ -37,10 +37,10 @@ class usersData{
             "password": params.password,
             "remember_token": params.remember_token
           };
-          const UserData = new UserTable(data);
+          const UserDatas = new userData(data);
       
           // Save the user data to the database using async/await
-          const savedUserData = await userData.save();
+          const savedUserData = await UserDatas.save();
       
           console.log('User object with hashed password:', savedUserData);
       
